@@ -19,7 +19,7 @@ bool CheckEquality(
 {
      for (std::size_t i = 0; i < h; ++i)
           for (std::size_t j = 0; j < w; ++j)
-               if (std::abs(a.At(i, j) - b.At(i, j)) < treshold)
+               if (std::abs(a.At(i, j) - b.At(i, j)) > treshold)
                     return false;
      return true;
 }

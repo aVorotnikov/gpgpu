@@ -107,6 +107,7 @@ namespace
           if (Matrix::MultiplicationMode::CPU == mode)
           {
                MatrixMultiplicationCpu(a, b, c, l, m, n);
+               return;
           }
 
           CHECK_FAILED(cudaSetDevice(0));
